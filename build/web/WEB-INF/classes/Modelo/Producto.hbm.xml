@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06/06/2020 07:59:01 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="Modelo.Producto" table="producto" catalog="trentinodb">
+        <id name="idProducto" type="java.lang.Integer">
+            <column name="idProducto" />
+            <generator class="identity" />
+        </id>
+        <property name="tv" type="string">
+            <column name="Tv" length="45" not-null="true" />
+        </property>
+        <property name="radio" type="string">
+            <column name="Radio" length="45" not-null="true" />
+        </property>
+        <property name="tostadora" type="string">
+            <column name="Tostadora" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06/06/2020 07:59:01 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="Modelo.Usuario" table="usuario" catalog="trentinodb">
+        <id name="usuario" type="string">
+            <column name="Usuario" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="Password" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
